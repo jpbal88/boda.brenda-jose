@@ -1,0 +1,774 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Brenda &amp; José - Wedding Invitation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&amp;family=Cormorant+Garamond:wght@300;400;600&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#fbf9f5",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#ffdadb",
+                        "on-primary-fixed": "#3d040e",
+                        "surface": "#fbf9f5",
+                        "on-tertiary-container": "#bb7a7f",
+                        "inverse-primary": "#ffb3b6",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#ffe088",
+                        "surface-container": "#efeeea",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#42161c",
+                        "on-primary-fixed-variant": "#763037",
+                        "surface-bright": "#fbf9f5",
+                        "surface-container-low": "#f5f3ef",
+                        "secondary": "#735c00",
+                        "outline": "#867273",
+                        "tertiary-fixed-dim": "#fcb3b9",
+                        "tertiary": "#260308",
+                        "on-tertiary-fixed": "#360d13",
+                        "secondary-container": "#fed65b",
+                        "primary-fixed": "#ffdada",
+                        "error": "#ba1a1a",
+                        "on-background": "#1b1c1a",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#745c00",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-surface": "#30312e",
+                        "on-secondary-fixed": "#241a00",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#4a0e17",
+                        "primary": "#2a0006",
+                        "on-primary-container": "#ca7379",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#d9c1c1",
+                        "on-tertiary-fixed-variant": "#6b373c",
+                        "primary-fixed-dim": "#ffb3b6",
+                        "on-surface-variant": "#544343",
+                        "on-surface": "#1b1c1a",
+                        "inverse-on-surface": "#f2f0ed",
+                        "surface-dim": "#dbdad6",
+                        "surface-container-high": "#eae8e4",
+                        "surface-container-highest": "#e4e2de",
+                        "surface-tint": "#93474d",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e4e2de"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "mobile-margin": "24px",
+                        "container-max": "1100px",
+                        "ornament-gap": "16px",
+                        "gutter": "32px",
+                        "section-padding-y": "120px"
+                    },
+                    "fontFamily": {
+                        "display-hero-mobile": ["Great Vibes"],
+                        "label-caps": ["Cinzel"],
+                        "heading-uppercase": ["Cinzel"],
+                        "button-text": ["Cinzel"],
+                        "display-hero": ["Great Vibes"],
+                        "body-main": ["Cormorant Garamond"],
+                        "body-large": ["Cormorant Garamond"],
+                        "section-title": ["Cormorant Garamond"]
+                    },
+                    "fontSize": {
+                        "display-hero-mobile": ["56px", { "lineHeight": "60px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700" }],
+                        "heading-uppercase": ["14px", { "lineHeight": "24px", "letterSpacing": "0.2em", "fontWeight": "600" }],
+                        "button-text": ["13px", { "lineHeight": "18px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-hero": ["84px", { "lineHeight": "90px", "fontWeight": "400" }],
+                        "body-main": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-large": ["22px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "section-title": ["42px", { "lineHeight": "48px", "fontWeight": "300" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #fbf9f5; scroll-behavior: smooth; }
+        .gold-text { background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gold-border { border-color: #d4af37; }
+        .gold-bg-solid { background: linear-gradient(135deg, #d4af37 0%, #aa771c 100%); }
+        .burgundy-gradient { background: radial-gradient(circle at center, #4a0e17 0%, #2a0006 100%); }
+        .glass-card { background: rgba(251, 249, 245, 0.9); backdrop-filter: blur(10px); }
+        .hairline { height: 1px; background-color: #d4af37; width: 100%; opacity: 0.5; }
+        
+        .scratch-card {
+            background-color: #d4af37;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(255,255,255,0.4) 0%, transparent 10%),
+                radial-gradient(circle at 80% 70%, rgba(255,255,255,0.4) 0%, transparent 10%),
+                radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2) 0%, rgba(170,119,28,0.8) 100%);
+            border: 2px solid #b38728;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .scratch-card-revealed {
+            background: #ffffff;
+            border: 2px solid #d4af37;
+            box-shadow: inset 0 0 10px rgba(212,175,55,0.2), 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        #scratch-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            border-radius: 0.75rem;
+            cursor: pointer;
+        }
+
+        .fade-slide-enter-active, .fade-slide-leave-active {
+            transition: all 0.5s ease;
+            max-height: 1000px;
+            opacity: 1;
+            overflow: hidden;
+        }
+        .fade-slide-enter, .fade-slide-leave-to {
+            max-height: 0;
+            opacity: 0;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            border-width: 0 !important;
+        }
+        
+        /* Side Menu Styles */
+        #mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        #mobile-menu.open {
+            transform: translateX(0);
+        }
+        #menu-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in-out;
+        }
+        #menu-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Shimmer Animation */
+        .shimmer-btn {
+            position: relative;
+            overflow: hidden;
+        }
+        .shimmer-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-20deg);
+            animation: shimmer 3s infinite;
+        }
+        @keyframes shimmer {
+            100% { left: 200%; }
+        }
+    </style>
+<script>
+        function downloadICS() {
+            const icsData = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brenda & Jose//Wedding//EN
+BEGIN:VEVENT
+UID:brenda-jose-wedding-2026
+DTSTAMP:20240101T000000Z
+DTSTART:20261122T210000Z
+DTEND:20261123T060000Z
+SUMMARY:Boda Brenda & José
+LOCATION:Darwin Tortugas
+DESCRIPTION:Ceremonia y Fiesta
+END:VEVENT
+END:VCALENDAR`;
+            const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.setAttribute('download', 'boda-brenda-y-jose.ics');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function copyToClipboard(text, buttonElement) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = buttonElement.innerHTML;
+                buttonElement.innerHTML = `<span class="material-symbols-outlined text-[14px]" data-icon="check">check</span> ¡COPIADO!`;
+                buttonElement.classList.add('bg-secondary', 'text-on-secondary');
+                buttonElement.classList.remove('text-secondary', 'bg-surface');
+                setTimeout(() => {
+                    buttonElement.innerHTML = originalText;
+                    buttonElement.classList.remove('bg-secondary', 'text-on-secondary');
+                    buttonElement.classList.add('text-secondary', 'bg-surface');
+                }, 2000);
+            });
+        }
+        
+        function toggleModal(id) {
+            document.getElementById(id).classList.toggle('hidden');
+        }
+        
+        function revealScratchCard() {
+            const canvas = document.getElementById('scratch-canvas');
+            if (canvas) {
+                canvas.style.display = 'none';
+            }
+            document.getElementById('scratch-card-unrevealed').classList.add('hidden');
+            document.getElementById('scratch-card-revealed-state').classList.remove('hidden');
+        }
+
+        function toggleBankDetails() {
+            const section = document.getElementById('bank-details-section');
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+                // Use a small timeout to allow display block to apply before transition
+                setTimeout(() => {
+                    section.classList.remove('fade-slide-enter');
+                }, 10);
+            } else {
+                section.classList.add('fade-slide-enter');
+                setTimeout(() => {
+                    section.classList.add('hidden');
+                }, 500); // match transition duration
+            }
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+            document.getElementById('menu-overlay').classList.toggle('open');
+        }
+
+        // Countdown animation
+        setInterval(() => {
+            const secEl = document.getElementById('cd-seconds');
+            if (secEl) {
+                let sec = parseInt(secEl.innerText);
+                sec = sec > 0 ? sec - 1 : 59;
+                secEl.innerText = sec.toString().padStart(2, '0');
+                
+                if (sec === 59) {
+                    const minEl = document.getElementById('cd-minutes');
+                    if(minEl) {
+                        let min = parseInt(minEl.innerText);
+                        min = min > 0 ? min - 1 : 59;
+                        minEl.innerText = min.toString().padStart(2, '0');
+                    }
+                }
+            }
+        }, 1000);
+
+        // Canvas Scratch Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('scratch-canvas');
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                let isDrawing = false;
+                
+                // Set canvas size to match container
+                const setCanvasSize = () => {
+                    const container = canvas.parentElement;
+                    canvas.width = container.offsetWidth;
+                    canvas.height = container.offsetHeight;
+                    
+                    // Fill with gold gradient
+                    const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+                    gradient.addColorStop(0, '#bf953f');
+                    gradient.addColorStop(0.25, '#fcf6ba');
+                    gradient.addColorStop(0.5, '#b38728');
+                    gradient.addColorStop(0.75, '#fbf5b7');
+                    gradient.addColorStop(1, '#aa771c');
+                    
+                    ctx.fillStyle = gradient;
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    
+                    // Add text
+                    ctx.font = '600 16px Cinzel';
+                    ctx.fillStyle = 'white';
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.shadowColor = 'rgba(0,0,0,0.5)';
+                    ctx.shadowBlur = 4;
+                    ctx.fillText('✦ RASPA AQUÍ ✦', canvas.width / 2, canvas.height / 2 - 15);
+                    
+                    ctx.font = '400 14px Cormorant Garamond';
+                    ctx.fillText('Para descubrir la fecha especial', canvas.width / 2, canvas.height / 2 + 15);
+                    
+                    // Reset shadow for scratching
+                    ctx.shadowColor = 'transparent';
+                    ctx.shadowBlur = 0;
+                };
+
+                setCanvasSize();
+                window.addEventListener('resize', setCanvasSize);
+
+                const getMousePos = (e) => {
+                    const rect = canvas.getBoundingClientRect();
+                    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+                    return {
+                        x: clientX - rect.left,
+                        y: clientY - rect.top
+                    };
+                };
+
+                const scratch = (x, y) => {
+                    ctx.globalCompositeOperation = 'destination-out';
+                    ctx.beginPath();
+                    ctx.arc(x, y, 20, 0, Math.PI * 2);
+                    ctx.fill();
+                    
+                    // Check completion percentage
+                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                    let transparentPixels = 0;
+                    for (let i = 3; i < imageData.data.length; i += 4) {
+                        if (imageData.data[i] === 0) transparentPixels++;
+                    }
+                    const percent = transparentPixels / (canvas.width * canvas.height);
+                    
+                    if (percent > 0.5) {
+                        revealScratchCard();
+                    }
+                };
+
+                const startDrawing = (e) => {
+                    isDrawing = true;
+                    const pos = getMousePos(e);
+                    scratch(pos.x, pos.y);
+                    if(e.cancelable) e.preventDefault();
+                };
+
+                const draw = (e) => {
+                    if (!isDrawing) return;
+                    const pos = getMousePos(e);
+                    scratch(pos.x, pos.y);
+                    if(e.cancelable) e.preventDefault();
+                };
+
+                const stopDrawing = () => {
+                    isDrawing = false;
+                };
+
+                canvas.addEventListener('mousedown', startDrawing);
+                canvas.addEventListener('mousemove', draw);
+                canvas.addEventListener('mouseup', stopDrawing);
+                canvas.addEventListener('mouseleave', stopDrawing);
+
+                canvas.addEventListener('touchstart', startDrawing, {passive: false});
+                canvas.addEventListener('touchmove', draw, {passive: false});
+                canvas.addEventListener('touchend', stopDrawing);
+            }
+        });
+    </script>
+</head>
+<body class="font-body-main text-on-surface antialiased flex flex-col min-h-screen" id="top">
+<!-- Hamburger Menu Button (Mobile) -->
+<div class="fixed top-4 left-4 z-[60] md:hidden">
+<button class="text-secondary p-2 bg-surface/80 backdrop-blur-md rounded-full shadow-md" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-[28px]" data-icon="menu">menu</span>
+</button>
+</div>
+<!-- Mobile Side Menu -->
+<div class="fixed inset-0 bg-black/50 z-[55] md:hidden" id="menu-overlay" onclick="toggleMobileMenu()"></div>
+<div class="fixed top-0 left-0 h-full w-64 bg-surface z-[60] shadow-2xl flex flex-col pt-20 px-6 md:hidden" id="mobile-menu">
+<button class="absolute top-4 right-4 text-secondary" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-[28px]" data-icon="close">close</span>
+</button>
+<a class="font-heading-uppercase text-heading-uppercase text-secondary font-bold py-4 border-b border-outline-variant/30" href="#top" onclick="toggleMobileMenu()">Inicio</a>
+<a class="font-heading-uppercase text-heading-uppercase text-secondary font-bold py-4 border-b border-outline-variant/30" href="#lugar" onclick="toggleMobileMenu()">Lugar</a>
+<a class="font-heading-uppercase text-heading-uppercase text-secondary font-bold py-4 border-b border-outline-variant/30" href="#regalos" onclick="toggleMobileMenu()">Regalos</a>
+<a class="font-heading-uppercase text-heading-uppercase text-secondary font-bold py-4 border-b border-outline-variant/30" href="#musica" onclick="toggleMobileMenu()">Música</a>
+<a class="font-heading-uppercase text-heading-uppercase text-secondary font-bold py-4" href="#rsvp" onclick="toggleMobileMenu()">RSVP</a>
+</div>
+<!-- Top Navigation (Desktop) -->
+<nav class="hidden md:flex justify-between items-center px-mobile-margin h-20 w-full max-w-container-max mx-auto bg-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30">
+<div class="flex items-center gap-4 text-secondary cursor-pointer hover:text-secondary-fixed transition-colors duration-300">
+</div>
+<div class="flex items-center gap-8">
+<a class="font-heading-uppercase text-heading-uppercase text-secondary font-bold hover:text-secondary-fixed transition-colors" href="#top">Inicio</a>
+<a class="font-heading-uppercase text-heading-uppercase text-secondary font-bold hover:text-secondary-fixed transition-colors" href="#lugar">Lugar</a>
+<a class="font-heading-uppercase text-heading-uppercase text-secondary font-bold hover:text-secondary-fixed transition-colors" href="#regalos">Regalos</a>
+<a class="font-label-caps text-label-caps text-secondary border border-secondary px-6 py-2 uppercase hover:bg-secondary hover:text-on-secondary transition-colors duration-300 rounded-full" href="#rsvp">RSVP</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="burgundy-gradient relative w-full h-screen flex flex-col items-center justify-center text-center px-mobile-margin overflow-hidden border-b-2 gold-border">
+<!-- Ornate Corners Placeholder -->
+<div class="absolute inset-4 border border-[#d4af37]/30 pointer-events-none">
+<div class="absolute top-0 left-0 w-8 h-8 border-t border-l border-[#d4af37]"></div>
+<div class="absolute top-0 right-0 w-8 h-8 border-t border-r border-[#d4af37]"></div>
+<div class="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-[#d4af37]"></div>
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-[#d4af37]"></div>
+</div>
+<p class="font-heading-uppercase text-heading-uppercase text-secondary-fixed/80 mb-4 tracking-[0.3em]">Nuestra Boda</p>
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-[1px] bg-secondary-fixed/50"></div>
+<p class="font-body-main text-body-main text-secondary-fixed italic">Save the Date</p>
+<div class="w-12 h-[1px] bg-secondary-fixed/50"></div>
+</div>
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero gold-text mb-12 drop-shadow-lg">
+                Brenda &amp; José
+            </h1>
+<a class="absolute bottom-12 flex flex-col items-center animate-bounce cursor-pointer group" href="#raspadita" style="scroll-behavior: smooth;">
+<p class="font-label-caps text-label-caps text-secondary-fixed/90 mb-2 group-hover:text-secondary-fixed transition-colors">Deslizar para descubrir</p>
+<span class="material-symbols-outlined text-secondary-fixed/90 border-2 border-secondary-fixed/50 rounded-full p-2 group-hover:border-secondary-fixed transition-colors" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</a>
+</section>
+<!-- Raspadita Section -->
+<section class="w-full bg-surface-container-low py-20 px-mobile-margin flex flex-col items-center justify-center text-center transition-opacity duration-1000 ease-in-out" id="raspadita">
+<h2 class="font-heading-uppercase text-heading-uppercase text-secondary mb-12 tracking-[0.2em]">RASPA PARA DESCUBRIR</h2>
+<div class="relative w-full max-w-md mx-auto aspect-[3/2] mb-8 cursor-pointer group rounded-xl overflow-hidden">
+<!-- Canvas for Scratching -->
+<canvas height="228" id="scratch-canvas" width="342"></canvas>
+<!-- Unrevealed State (Fallback/Behind Canvas) -->
+<div class="absolute inset-0 scratch-card rounded-xl flex items-center justify-center flex-col transition-all duration-300 hidden" id="scratch-card-unrevealed">
+<p class="font-heading-uppercase text-heading-uppercase text-white drop-shadow-md mb-2 tracking-[0.1em]">✦ RASPA AQUÍ ✦</p>
+<p class="font-body-main text-body-main text-white/90 drop-shadow-sm">Para descubrir la fecha especial</p>
+</div>
+<!-- Revealed State -->
+<div class="absolute inset-0 scratch-card-revealed rounded-xl flex flex-col items-center justify-center p-6 hidden" id="scratch-card-revealed-state">
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-2">FECHA &amp; HORA CONFIRMADA</p>
+<p class="font-heading-uppercase text-primary font-bold mb-1">DOMINGO</p>
+<p class="font-section-title text-[32px] md:text-[42px] gold-text mb-2 font-bold tracking-widest">22 • 11 • 2026</p>
+<div class="bg-primary/10 px-4 py-1 rounded-full mb-3 flex items-center gap-2 text-primary border border-primary/20">
+<span class="material-symbols-outlined text-[16px]" data-icon="schedule">schedule</span>
+<span class="font-button-text text-[11px]">18:00 HS PUNTUAL</span>
+</div>
+<p class="font-body-main text-sm text-on-surface-variant">Darwin Tortugas — Buenos Aires</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 items-center relative z-20">
+<button class="font-button-text text-[11px] text-secondary border border-transparent px-4 py-2 flex items-center justify-center gap-2 hover:bg-surface-variant transition-colors rounded-full" onclick="revealScratchCard()">
+<span class="material-symbols-outlined text-[16px]" data-icon="visibility">visibility</span>
+                    REVELAR INMEDIATAMENTE
+                </button>
+</div>
+</section>
+<!-- Cinematic Photo Section -->
+<section class="w-full h-[80vh] relative backdrop-blur-[4px]" id="nos-casamos">
+<div class="w-full h-full absolute inset-0 backdrop-blur-[4px] z-10"></div>
+<img class="w-full h-full object-cover absolute inset-0 z-0" data-alt="A cinematic full-bleed image of a couple standing on a balcony overlooking a stunning mountainous landscape with a lake, bright sunny day, high-end editorial wedding photography style, natural lighting, deep contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsgHxrOesigLKGX6CNW3OIBfES-bCkT7Ntn7Ynoht5eHRYBh42oWPBfs1YFWXnyVgtETRGf9MKM10jfG0O0zRaBu3WunNbO_0ialtQ1eOHQ7V40nZBWV_sXvfmX1mwtaNvFDHwAynzNLMPzsnGWW7dcfOJTMSbv1e8Y65qbZqLMwxEcCPIBqy08ttBQrpxquZMYhVER8vWkHei9KAb90oZNUncGPaufwyH2WCfMiZ9zaGWXKxQV3iauW_bS7oggU8t6g">
+<div class="absolute inset-0 bg-black/10 z-0"></div>
+<div class="absolute inset-0 flex items-end justify-center pb-24 z-20">
+<h2 class="font-heading-uppercase text-[32px] md:text-[64px] tracking-[0.4em] text-white drop-shadow-xl gold-text text-center font-bold">¡NOS CASAMOS!</h2>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="w-full max-w-container-max mx-auto py-section-padding-y px-mobile-margin text-center">
+<div class="flex justify-center mb-8">
+<span class="material-symbols-outlined font-light text-[32px] gold-text" data-icon="diamond">diamond</span>
+</div>
+<blockquote class="font-section-title text-section-title text-on-surface mb-8 max-w-3xl mx-auto leading-relaxed">
+                “Andábamos sin buscarnos pero sabiendo que andábamos para encontrarnos. El amor no necesita ser entendido, simplemente necesita ser celebrado.”
+            </blockquote>
+<p class="font-heading-uppercase text-heading-uppercase text-secondary mb-12">— Julio Cortázar</p>
+<p class="font-body-main text-[18px] md:text-body-main text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                Hay momentos en la vida que son irrepetibles, pero compartirlos con quienes más amamos los convierte en eternos. Queremos que seas parte fundamental de nuestra noche mágica.
+            </p>
+<div class="flex justify-center mt-12">
+<div class="w-24 h-[1px] bg-secondary/30 relative">
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rotate-45 border border-secondary bg-surface"></div>
+</div>
+</div>
+</section>
+<!-- Countdown Section -->
+<section class="bg-surface-container-low py-section-padding-y px-mobile-margin relative">
+<div class="max-w-4xl mx-auto text-center">
+<p class="font-heading-uppercase text-heading-uppercase text-secondary mb-12">Cuenta Regresiva para el Gran Día</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12">
+<div class="bg-surface border border-outline-variant/30 p-6 shadow-sm">
+<span class="block font-section-title text-[48px] text-primary mb-2" id="cd-days">86</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Días</span>
+</div>
+<div class="bg-surface border border-outline-variant/30 p-6 shadow-sm">
+<span class="block font-section-title text-[48px] text-primary mb-2" id="cd-hours">01</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Horas</span>
+</div>
+<div class="bg-surface border border-outline-variant/30 p-6 shadow-sm">
+<span class="block font-section-title text-[48px] text-primary mb-2" id="cd-minutes">56</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Minutos</span>
+</div>
+<div class="bg-surface border border-outline-variant/30 p-6 shadow-sm">
+<span class="block font-section-title text-[48px] text-secondary mb-2" id="cd-seconds">59</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Segundos</span>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="font-button-text text-button-text text-on-surface border border-outline-variant px-6 py-3 flex items-center justify-center gap-2 hover:bg-primary hover:text-on-primary hover:border-primary transition-all duration-300 bg-surface rounded-full shadow-sm hover:shadow-md" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda+Brenda+%26+Jos%C3%A9&amp;dates=20261122T210000Z/20261123T060000Z&amp;details=Ceremonia+y+Fiesta&amp;location=Darwin+Tortugas" target="_blank">
+<span class="material-symbols-outlined text-[18px]" data-icon="calendar_today">calendar_today</span>
+                         Agendar en Google Calendar
+                     </a>
+<button class="font-button-text text-button-text text-on-surface border border-outline-variant px-6 py-3 flex items-center justify-center gap-2 hover:bg-primary hover:text-on-primary hover:border-primary transition-all duration-300 bg-surface rounded-full shadow-sm hover:shadow-md" onclick="downloadICS()">
+<span class="material-symbols-outlined text-[18px]" data-icon="event">event</span>
+                         Apple / Outlook (.ics)
+                     </button>
+</div>
+</div>
+</section>
+<!-- Venue Section -->
+<section class="py-section-padding-y px-mobile-margin max-w-container-max mx-auto" id="lugar">
+<div class="text-center mb-16">
+<div class="flex justify-center mb-4">
+<span class="material-symbols-outlined font-light text-[32px] gold-text" data-icon="location_on">location_on</span>
+</div>
+<p class="font-heading-uppercase text-heading-uppercase text-secondary mb-4">Lugar &amp; Ceremonia</p>
+<h2 class="font-section-title text-section-title text-on-surface mb-2">Darwin Tortugas</h2>
+<p class="font-body-large text-body-large text-secondary italic">Salón Laguna</p>
+</div>
+<div class="bg-surface border border-secondary/20 p-6 md:p-12 shadow-lg flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+<div class="w-full md:w-1/2">
+<div class="p-2 border border-outline-variant/30 bg-surface-container-lowest">
+<img class="w-full h-auto grayscale opacity-90 sepia-[.2]" data-alt="A detailed black and white sketch of a modern, low-profile event venue building with palm trees and a weeping willow, elegant architectural drawing style, fine lines on a cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvuUSUgdteWX-QBdclQGQES2pTPHPEceTaqAsh2gTQAfOwytCyT3FXV4Ixcd4arMOlRXu7nRaPjEnBDfvJ6vG3G9ST3ZRYVq9G2vQy4KgqE0F_won38rmlJjT_guCnZ-qOjdG84StGSErNKGjid0gXhQWHUDSrApkRPj9eooOIa31CBHswQw4Sh-tpnW4kssOwLfAM9wY_6cJaanhQPheEIzdAxCzfoUyy64AymeVfLP-j9NuIBXYGm0H1VHtFXCQ-rA">
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col gap-6">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-label-caps text-label-caps">Ubicación Todo en Uno</span>
+</div>
+<h3 class="font-section-title text-[32px] text-on-surface">Ceremonia &amp; Fiesta</h3>
+<p class="font-body-main text-body-main text-on-surface-variant">
+                        Para su total comodidad, <strong class="text-primary font-semibold">la ceremonia civil, el cóctel al atardecer y la fiesta</strong> se realizarán íntegramente en las instalaciones de Darwin Tortugas.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 pt-6 border-t border-outline-variant/30">
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-2">Dirección</p>
+<p class="font-body-main text-body-main text-on-surface-variant text-sm">Panamericana Ramal Pilar Km 38.5, Tortuguitas, Buenos Aires.</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-2">Estacionamiento</p>
+<p class="font-body-main text-body-main text-on-surface-variant text-sm">Privado &amp; Valet Parking con seguridad privada toda la noche.</p>
+</div>
+</div>
+<button class="mt-6 font-button-text text-button-text text-secondary border border-secondary px-6 py-3 uppercase hover:bg-secondary hover:text-on-secondary transition-colors duration-300 w-full flex justify-center items-center gap-2 rounded-full group" onclick="toggleModal('location-modal')">
+<span class="material-symbols-outlined text-[18px] group-hover:animate-pulse" data-icon="near_me">near_me</span>
+                        Cómo Llegar
+                    </button>
+</div>
+</div>
+</section>
+<!-- Location Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 hidden backdrop-blur-sm" id="location-modal">
+<div class="bg-surface p-8 max-w-sm w-full mx-4 rounded-xl shadow-2xl border border-secondary/20 relative">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="toggleModal('location-modal')">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+<h3 class="font-section-title text-[28px] text-on-surface mb-6 text-center">Abrir en...</h3>
+<div class="flex flex-col gap-4">
+<a class="font-button-text text-button-text text-on-surface border border-outline-variant px-6 py-4 flex items-center justify-center gap-3 hover:bg-surface-variant hover:border-secondary transition-all rounded-full group" href="https://waze.com/ul?ll=-34.453303,-58.742084&amp;navigate=yes" target="_blank">
+<img alt="Waze" class="w-6 h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2s0CRpw1T0u9KrAI6YkvzQy7WooX2azpkBldg7s4xR8z5GOvLV3n4gDNc4BHlj5rSL3X0PkMgexllg_waEkYBNVdTgH2LROXQg57ossEeYkfSe9x7LgiWNCNMU7TcPwnmwAJjqXMCZQFgsPjtF9KKzvdHkPPahjwwjTz795tmE-BbMwmi3ucC6QxeWvpwVxXUbqfsRBziw-myVb3SomXc0prSRwmVTy8otAoDI2l1YVrXa-BSPxvwPzeLNzYae7q8aw">
+                        Waze
+                    </a>
+<a class="font-button-text text-button-text text-on-surface border border-outline-variant px-6 py-4 flex items-center justify-center gap-3 hover:bg-surface-variant hover:border-secondary transition-all rounded-full group" href="https://www.google.com/maps/search/?api=1&amp;query=Darwin+Tortugas" target="_blank">
+<img alt="Google Maps" class="w-6 h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEkXaj8c-AEP8ekLmHmt_QQ5rbEXbLktEko6G6A4-ewHXy1w3vG6husrFrvr48bXJfhRQd7aeCfnHdIHkUeY0GATkCmm5kvPpAMkt8MIJ7GbStHwTBUekUC54K28u_RZ-hivQ_PzYWUzTsW1IdUTVsji6Uja82tefXFCpiAu5htsuIa22yvYGvwBJFMDlZ1w6tdSLxP8273mfG_o6z8bcbOYNZWYW0f0kevR2ytdzEh5JCFXnCFgxfuS-uzolxURsuuQ">
+                        Google Maps
+                    </a>
+</div>
+</div>
+</div>
+<!-- Dress Code Section -->
+<section class="bg-surface-container-low py-section-padding-y px-mobile-margin text-center">
+<div class="flex justify-center mb-6">
+<span class="material-symbols-outlined font-light text-[32px] gold-text" data-icon="checkroom">checkroom</span>
+</div>
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-24 flex-col md:flex-row-reverse">
+<div class="w-full md:w-1/2 text-center md:text-left flex flex-col gap-6 order-1 md:order-2">
+<p class="font-heading-uppercase text-heading-uppercase text-primary tracking-[0.3em] md:hidden">Código de Vestimenta:<br> Elegante Formal</p>
+<p class="font-heading-uppercase text-heading-uppercase text-primary tracking-[0.3em] hidden md:block">Código de Vestimenta:<br> Elegante Formal</p>
+<p class="font-body-main text-body-main text-on-surface-variant leading-relaxed">
+                        Deseamos que te sientas espectacular. La noche amerita brillo y distinción.
+                        <br><br>
+<strong class="text-primary">Nota con cariño:</strong> Rogamos reservar los tonos blancos y marfil exclusivamente para la novia.
+                    </p>
+<div class="pl-6 border-l-2 border-secondary/50 mt-6 text-left">
+<p class="font-section-title text-[24px] text-on-surface italic mb-2">“Si el corazón se aburre de querer para qué sirve.”</p>
+<p class="font-label-caps text-label-caps text-secondary">— Mario Benedetti</p>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative order-2 md:order-1">
+<div class="absolute -inset-4 border border-secondary/30 rounded-t-full"></div>
+<img class="w-full h-auto rounded-t-full object-cover aspect-[4/5] shadow-xl" data-alt="Close up of a classic black tuxedo with a crisp white shirt, a black bow tie, and a white rose boutonniere, resting elegantly next to a small jewelry box holding gold rings, luxurious satin fabric background, dramatic lighting, high fashion editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM90Jdcdw7KaJJi1O71G6a3Dbybxp8ohHAiKOtTrOiKOTyAgj8kfSU0lhZzmxzNKv5UtcU1wSvcB_QUN-QXFDqE7_3Fy42vFYpCF6_voVmUExqax7gxZ59xrtwX2Y7apWW28PixBCU7YhwhgRu8cTlrNG8vTDUsiArmcO3h6CmbqmKDOlFvDku6La2A1M4YMYIwZa_9h_MhDvGkaP9pXeaAi3s9p5bTnxegCWcw-Xlna2P34qgcCNpiSbn2gGENR2A-w">
+</div>
+</div>
+</section>
+<!-- Gifts Section -->
+<section class="py-section-padding-y px-mobile-margin bg-surface text-center" id="regalos">
+<div class="flex justify-center mb-6">
+<span class="material-symbols-outlined font-light text-[32px] gold-text" data-icon="card_giftcard">card_giftcard</span>
+</div>
+<p class="font-heading-uppercase text-heading-uppercase text-primary mb-4 tracking-[0.2em]">Muestra de Afecto</p>
+<p class="font-body-main text-body-main text-on-surface-variant max-w-2xl mx-auto mb-10">
+                Tu presencia y cariño en nuestro día es nuestro mayor regalo. Si deseas colaborar con nuestra luna de miel, haz clic a continuación:
+            </p>
+<button class="gold-bg-solid shimmer-btn font-button-text text-button-text text-white px-8 py-4 uppercase hover:scale-105 hover:opacity-90 transition-all duration-300 shadow-md inline-flex items-center gap-2 mb-12 rounded-full" onclick="toggleBankDetails()">
+<span class="material-symbols-outlined text-[20px]" data-icon="account_balance">account_balance</span>
+                Ver Datos Bancarios
+            </button>
+<div class="max-w-3xl mx-auto bg-surface-container border border-outline-variant/20 p-8 md:p-12 text-left rounded-xl shadow-sm hidden fade-slide-enter" id="bank-details-section">
+<h3 class="font-section-title text-[28px] text-on-surface text-center mb-2">Cuentas Bancarias</h3>
+<p class="font-body-main text-sm text-on-surface-variant text-center mb-8">Selecciona la cuenta de tu preferencia y copia los datos fácilmente</p>
+<div class="space-y-6">
+<!-- Bank 1 -->
+<div class="bg-[#fdfbf6] border border-secondary/20 p-6 flex flex-col justify-between items-start gap-4 rounded-[16px] shadow-sm">
+<div class="flex justify-between items-center w-full mb-2">
+<h4 class="font-body-large text-on-surface">Cuenta en $ARS</h4>
+<span class="font-label-caps text-[10px] bg-secondary-container text-on-secondary-container px-2 py-1 rounded">PREX</span>
+</div>
+<div class="flex flex-col md:flex-row gap-4 w-full">
+<div class="flex justify-between items-center bg-surface-container-low p-3 rounded-lg border border-outline-variant/20 w-full md:w-1/2">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1">ALIAS</p>
+<p class="font-mono text-sm text-primary font-semibold">brenyjose.ars</p>
+</div>
+<button class="font-button-text text-[11px] text-secondary border border-secondary px-3 py-1 flex items-center justify-center gap-1 hover:bg-surface-variant rounded-full transition-colors" onclick="copyToClipboard('brenyjose.ars', this)">
+<span class="material-symbols-outlined text-[14px]" data-icon="content_copy">content_copy</span> Copiar
+                                </button>
+</div>
+<div class="flex justify-between items-center bg-surface-container-low p-3 rounded-lg border border-outline-variant/20 w-full md:w-1/2">
+<div class="overflow-hidden w-full max-w-[calc(100%-80px)]">
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1">CVU</p>
+<p class="font-mono text-sm text-on-surface truncate">0000013000032326653253</p>
+</div>
+<button class="font-button-text text-[11px] text-secondary border border-secondary px-3 py-1 flex items-center justify-center gap-1 hover:bg-surface-variant rounded-full transition-colors shrink-0 ml-2" onclick="copyToClipboard('0000013000032326653253', this)">
+<span class="material-symbols-outlined text-[14px]" data-icon="content_copy">content_copy</span> Copiar
+                                </button>
+</div>
+</div>
+</div>
+<!-- Bank 2 -->
+<div class="bg-[#fdfbf6] border border-secondary/20 p-6 flex flex-col justify-between items-start gap-4 rounded-[16px] shadow-sm">
+<div class="flex justify-between items-center w-full mb-2">
+<h4 class="font-body-large text-on-surface">Cuenta en $USD (Uruguay)</h4>
+<span class="font-label-caps text-[10px] bg-secondary-container text-on-secondary-container px-2 py-1 rounded">BANCO ITAÚ</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full mb-2">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1">TITULAR</p>
+<p class="font-mono text-sm text-on-surface">Mercedes Balparda</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1">TIPO</p>
+<p class="font-mono text-sm text-on-surface">Cuenta Corriente USD</p>
+</div>
+<div class="flex justify-between items-center bg-surface-container-low p-3 rounded-lg border border-outline-variant/20 md:bg-transparent md:border-none md:p-0">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant mb-1">NRO. DE CUENTA</p>
+<p class="font-mono text-sm text-primary font-semibold">291 6994</p>
+</div>
+<button class="font-button-text text-[11px] text-secondary border border-secondary px-3 py-1 flex items-center justify-center gap-1 hover:bg-surface-variant rounded-full transition-colors md:hidden" onclick="copyToClipboard('2916994', this)">
+<span class="material-symbols-outlined text-[14px]" data-icon="content_copy">content_copy</span> Copiar
+                                </button>
+</div>
+</div>
+<div class="hidden md:flex justify-end w-full">
+<button class="font-button-text text-[11px] text-secondary border border-secondary px-4 py-2 flex items-center justify-center gap-1 hover:bg-surface-variant rounded-full transition-colors" onclick="copyToClipboard('2916994', this)"><span class="material-symbols-outlined text-[14px]" data-icon="content_copy">content_copy</span> Copiar</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Music Section -->
+<section class="py-section-padding-y px-mobile-margin bg-surface-container-low text-center" id="musica">
+<div class="max-w-3xl mx-auto flex flex-col items-center">
+<div class="flex justify-center mb-6">
+<span class="material-symbols-outlined font-light text-[32px] gold-text" data-icon="music_note">music_note</span>
+</div>
+<p class="font-heading-uppercase text-heading-uppercase text-primary mb-4 tracking-[0.2em]">Nuestra Música</p>
+<p class="font-body-main text-body-main text-on-surface-variant mb-8 max-w-lg mx-auto">
+                    Ayúdanos a crear la banda sonora perfecta para nuestra celebración.<br>
+<span class="italic">"La alegría compartida es doble alegría."</span>
+</p>
+<div class="w-full max-w-2xl mx-auto bg-[#181818] rounded-xl overflow-hidden shadow-2xl">
+<div class="flex flex-col md:flex-row p-4">
+<!-- Album Art Mosaic -->
+<div class="w-full md:w-[150px] aspect-square flex-shrink-0 grid grid-cols-2 grid-rows-2 rounded-md overflow-hidden mb-4 md:mb-0">
+<img alt="Cover 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwwHWapQAwFPAJYB_0JnQF14ApnCFnLlUymKkraEMBOVSA_wHubNsjvO9xKX0-4paO1UItMnjvECwsk_1IIXFPycw9DTsibCwJzuMhHNnKFeDeXs08TiusdPpBQzD9Hl6tv7LjXZmCaT99Rzl694tc4nPeFeftYlcKyIvgujYm-JtCLPRIdcdFe_n8p0YNwWc3V2fJE-jKTlJuvFXLJq7T_fdC1Y4HQjRtl4kwF_6gVmxwOzxTkhNR">
+<img alt="Cover 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-uE2t9acZUDotr3KbI-JUwvBrYVfkfr0L0kIKam41ZYzwMsPV0w722K-RnYQHs1H7VdQXnfBpJYZKOSR_DNZnrcFsGYxsFHLFRKRDfPCY2URttb2UWdHAHEF5je-duAGNFKzllm0Yu_B6yJ2_quVfaVKipglLK-dxW42hXlhtTF5qC1CQY-6b3RQenhD0kXJfS9yQbfN1ekOsxHA5sS_Bqpm3MJM64JvLpSeAKeai6GDzBmsk8b0W">
+<img alt="Cover 3" class="w-full h-full object-cover bg-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ZgG4vV9_F9M_p0W9q9Q-q2X7R3w9Z4g4Z7Q-q9V9_F9M_p0W9q9Q-q2X7R3w9Z4g4Z7Q">
+<img alt="Cover 4" class="w-full h-full object-cover bg-blue-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ZgG4vV9_F9M_p0W9q9Q-q2X7R3w9Z4g4Z7Q-q9V9_F9M_p0W9q9Q-q2X7R3w9Z4g4Z7Q">
+</div>
+<!-- Tracklist & Controls -->
+<div class="flex-grow flex flex-col justify-between md:pl-4 text-left relative">
+<img alt="Spotify" class="absolute top-0 right-0 w-6 h-6 filter brightness-0 invert opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4UdhPnbq1p2fHLbxSfkA29MOyvG5X9reXV37jRMXg45bVha67O5DwGL4Y9z5qWNtSetIvgJs7YLLmj8Y_Br4tqx4WZsd7c5e3F151byLuY2a_fQaVauLmhIW2kW_dKel5jrZwr6iYevO4tS62O6qSXfOiNzFOA9Hsrmuxw6qP6PHhBhA5-Iir8teoLGHRXkAR6SH3ct7hStI8QODB0SyLodIxy60TC8OQ66GmudsoBEajuvO8jGnp">
+<div class="space-y-3 mt-2 md:mt-0">
+<div class="flex items-center text-[#B3B3B3] text-sm">
+<span class="w-6 text-center">1</span>
+<span class="text-white font-medium ml-2">Can't Help Falling In Love With You</span>
+<span class="ml-1 truncate">· TWOPILOTS, For...</span>
+</div>
+<div class="flex items-center text-[#B3B3B3] text-sm">
+<span class="w-6 text-center">2</span>
+<span class="text-white font-medium ml-2">BIRDS OF A FEATHER</span>
+<span class="ml-1">· Billie Eilish</span>
+</div>
+</div>
+<div class="mt-6 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+<div>
+<p class="text-white text-sm font-semibold mb-1">Lista de Casamiento B&amp;J · José Peirano</p>
+<span class="text-black bg-[#B3B3B3] text-[10px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider">Muestra</span>
+</div>
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-[24px] text-[#B3B3B3] hover:text-white cursor-pointer" data-icon="skip_previous">skip_previous</span>
+<span class="material-symbols-outlined text-[24px] text-[#B3B3B3] hover:text-white cursor-pointer" data-icon="skip_next">skip_next</span>
+<a class="w-8 h-8 bg-[#1DB954] rounded-full flex items-center justify-center cursor-pointer ml-2 hover:scale-105 transition-transform" href="https://open.spotify.com/playlist/0p9MSDugf3YnzCZ3OiAEcl?si=uo72eq2sRny4AsodJc7baQ" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-black" data-icon="play_arrow">play_arrow</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="mt-8 font-button-text text-button-text text-secondary border border-secondary px-6 py-3 uppercase hover:bg-secondary hover:text-on-secondary transition-colors duration-300 inline-flex justify-center items-center gap-2 rounded-full group" href="https://open.spotify.com/playlist/0p9MSDugf3YnzCZ3OiAEcl?si=uo72eq2sRny4AsodJc7baQ" target="_blank">
+<span class="material-symbols-outlined text-[18px]" data-icon="library_music">library_music</span>
+                Escuchar en Spotify
+            </a>
+</div>
+</section>
+<!-- RSVP Final CTA -->
+<section class="burgundy-gradient min-h-[70vh] flex flex-col items-center justify-center py-section-padding-y px-mobile-margin text-center text-on-primary border-t-2 gold-border" id="rsvp">
+<div class="flex justify-center mb-8">
+<div class="w-16 h-16 rounded-full border border-secondary/50 flex items-center justify-center">
+<span class="material-symbols-outlined font-light text-[32px] gold-text" data-icon="diamond">diamond</span>
+</div>
+</div>
+<p class="font-heading-uppercase text-heading-uppercase text-secondary-fixed tracking-[0.3em] mb-8">Tu Presencia es Esencial</p>
+<a class="gold-bg-solid shimmer-btn font-button-text text-button-text text-white px-8 py-4 uppercase hover:scale-105 transition-all duration-300 shadow-md inline-flex items-center gap-2 mb-8 rounded-full group" href="https://forms.gle/uYiK7BX7emm2bnhs7" target="_blank">
+<span class="material-symbols-outlined text-[20px] group-hover:rotate-12 transition-transform" data-icon="check_circle">check_circle</span>
+                Confirmar Asistencia (RSVP)
+            </a>
+<p class="font-body-main text-body-main text-on-primary/80 max-w-lg mx-auto">Por favor, confírmanos tu asistencia antes del 1ero de Octubre de 2026 para coordinar cada detalle de tu lugar.</p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary full-width relative flat no shadows w-full py-12 flex flex-col items-center gap-4 text-center px-mobile-margin">
+<div class="font-display-hero text-[42px] text-secondary-fixed mb-2">
+            Brenda &amp; José
+        </div>
+<div class="font-body-main text-[14px] text-on-primary/80 mb-2">
+            22.11.2026 • BUENOS AIRES
+        </div>
+</footer>
+
+
+</body></html>
